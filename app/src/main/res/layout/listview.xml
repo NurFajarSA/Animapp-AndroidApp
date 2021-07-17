@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_2"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/rv_img"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/cardlist"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/rv_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:background="#00000000"
+                android:fontFamily="@font/now_medium"
+                android:text="@string/class_animal"
+                android:textColor="@color/font_gray1"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="@id/rv_img"
+                app:layout_constraintTop_toTopOf="@id/rv_img" />
+
+            <ImageView
+                android:id="@+id/rv_img_animapp"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:adjustViewBounds="true"
+                android:background="#00000000"
+                app:layout_constraintBottom_toBottomOf="@id/rv_img"
+                app:layout_constraintEnd_toEndOf="@id/rv_img"
+                app:layout_constraintStart_toStartOf="@id/rv_guideline"
+                app:layout_constraintTop_toTopOf="@id/rv_img" />
+
+            <TextView
+                android:id="@+id/rv_animal_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:background="#00000000"
+                android:fontFamily="@font/coresans_extrabold"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/app_name"
+                android:textColor="@color/font_gray2"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="@id/rv_img"
+                app:layout_constraintTop_toBottomOf="@id/rv_class" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/rv_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.45" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

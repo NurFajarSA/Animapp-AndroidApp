@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Animapp</string>
+    <string name="my_name">Nur Fajar S. A.</string>
+    <string name="my_email">nurjafar13@gmail.com</string>
+    <string name="birth_date">Birth Date</string>
+    <string name="school">School</string>
+    <string name="my_birth">July 02, 2004</string>
+    <string name="my_school">SMAN 1 Nagreg</string>
+    <string name="biography">Biography</string>
+    <string name="content_bio">Nur Fajar Sayyidul Ayyam received his unemployment degree after completing his education at the senior high school.
+        Now, he is struggling to get accepted into one of the best universities in Indonesia.</string>
+    <string name="contact_me">Contact Me</string>
+    <string name="about_me">About Me</string>
+    <string name="class_animal">CLASS</string>
+    <string name="orde_animal">ORDE</string>
+    <string name="family_animal">FAMILY</string>
+    <string name="reproduction">REPRODUCTION</string>
+    <string name="discover">Discover</string>
+</resources>

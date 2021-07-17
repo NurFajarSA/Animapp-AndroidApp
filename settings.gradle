@@ -1,0 +1,2 @@
+rootProject.name = "Animapp"
+include ':app'
