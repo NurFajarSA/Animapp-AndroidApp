@@ -1,0 +1,113 @@
+Index: .idea/.gitignore
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+deleted file mode 100644
+--- a/.idea/.gitignore	(revision 46d6d449546a8c3e31c04a413cb4425d8aaf44ce)
++++ /dev/null	(revision 46d6d449546a8c3e31c04a413cb4425d8aaf44ce)
+@@ -1,3 +0,0 @@
+-# Default ignored files
+-/shelf/
+-/workspace.xml
+Index: gradle/wrapper/gradle-wrapper.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#Fri Jun 11 14:37:21 WIB 2021\ndistributionBase=GRADLE_USER_HOME\ndistributionUrl=https\\://services.gradle.org/distributions/gradle-6.7.1-bin.zip\ndistributionPath=wrapper/dists\nzipStorePath=wrapper/dists\nzipStoreBase=GRADLE_USER_HOME\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/gradle/wrapper/gradle-wrapper.properties b/gradle/wrapper/gradle-wrapper.properties
+--- a/gradle/wrapper/gradle-wrapper.properties	(revision 46d6d449546a8c3e31c04a413cb4425d8aaf44ce)
++++ b/gradle/wrapper/gradle-wrapper.properties	(date 1629776915840)
+@@ -1,6 +1,6 @@
+ #Fri Jun 11 14:37:21 WIB 2021
+ distributionBase=GRADLE_USER_HOME
+-distributionUrl=https\://services.gradle.org/distributions/gradle-6.7.1-bin.zip
++distributionUrl=https\://services.gradle.org/distributions/gradle-7.0.2-bin.zip
+ distributionPath=wrapper/dists
+ zipStorePath=wrapper/dists
+ zipStoreBase=GRADLE_USER_HOME
+Index: build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>// Top-level build file where you can add configuration options common to all sub-projects/modules.\nbuildscript {\n    ext.kotlin_version = \"1.5.10\"\n    repositories {\n        google()\n        mavenCentral()\n    }\n    dependencies {\n        classpath \"com.android.tools.build:gradle:4.2.1\"\n        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n        // NOTE: Do not place your application dependencies here; they belong\n        // in the individual module build.gradle files\n    }\n}\n\nallprojects {\n    repositories {\n        google()\n        mavenCentral()\n        jcenter() // Warning: this repository is going to shut down soon\n    }\n}\n\ntask clean(type: Delete) {\n    delete rootProject.buildDir\n}\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build.gradle b/build.gradle
+--- a/build.gradle	(revision 46d6d449546a8c3e31c04a413cb4425d8aaf44ce)
++++ b/build.gradle	(date 1629776916324)
+@@ -6,7 +6,7 @@
+         mavenCentral()
+     }
+     dependencies {
+-        classpath "com.android.tools.build:gradle:4.2.1"
++        classpath 'com.android.tools.build:gradle:7.0.1'
+         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+         // NOTE: Do not place your application dependencies here; they belong
+         // in the individual module build.gradle files
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_11\" default=\"true\" project-jdk-name=\"1.8\" project-jdk-type=\"JavaSDK\">\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\n  </component>\n  <component name=\"ProjectType\">\n    <option name=\"id\" value=\"Android\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 46d6d449546a8c3e31c04a413cb4425d8aaf44ce)
++++ b/.idea/misc.xml	(date 1629737686979)
+@@ -1,6 +1,13 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
++  <component name="DesignSurface">
++    <option name="filePathToZoomLevelMap">
++      <map>
++        <entry key="app/src/main/res/layout/activity_about.xml" value="0.11096014492753623" />
++      </map>
++    </option>
++  </component>
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/build/classes" />
+   </component>
+   <component name="ProjectType">
+Index: .idea/jarRepositories.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"RemoteRepositoriesConfiguration\">\n    <remote-repository>\n      <option name=\"id\" value=\"central\" />\n      <option name=\"name\" value=\"Maven Central repository\" />\n      <option name=\"url\" value=\"https://repo1.maven.org/maven2\" />\n    </remote-repository>\n    <remote-repository>\n      <option name=\"id\" value=\"jboss.community\" />\n      <option name=\"name\" value=\"JBoss Community repository\" />\n      <option name=\"url\" value=\"https://repository.jboss.org/nexus/content/repositories/public/\" />\n    </remote-repository>\n    <remote-repository>\n      <option name=\"id\" value=\"MavenRepo\" />\n      <option name=\"name\" value=\"MavenRepo\" />\n      <option name=\"url\" value=\"https://repo.maven.apache.org/maven2/\" />\n    </remote-repository>\n    <remote-repository>\n      <option name=\"id\" value=\"BintrayJCenter\" />\n      <option name=\"name\" value=\"BintrayJCenter\" />\n      <option name=\"url\" value=\"https://jcenter.bintray.com/\" />\n    </remote-repository>\n    <remote-repository>\n      <option name=\"id\" value=\"Google\" />\n      <option name=\"name\" value=\"Google\" />\n      <option name=\"url\" value=\"https://dl.google.com/dl/android/maven2/\" />\n    </remote-repository>\n    <remote-repository>\n      <option name=\"id\" value=\"maven\" />\n      <option name=\"name\" value=\"maven\" />\n      <option name=\"url\" value=\"https://jitpack.io\" />\n    </remote-repository>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/jarRepositories.xml b/.idea/jarRepositories.xml
+--- a/.idea/jarRepositories.xml	(revision 46d6d449546a8c3e31c04a413cb4425d8aaf44ce)
++++ b/.idea/jarRepositories.xml	(date 1629737541872)
+@@ -26,10 +26,5 @@
+       <option name="name" value="Google" />
+       <option name="url" value="https://dl.google.com/dl/android/maven2/" />
+     </remote-repository>
+-    <remote-repository>
+-      <option name="id" value="maven" />
+-      <option name="name" value="maven" />
+-      <option name="url" value="https://jitpack.io" />
+-    </remote-repository>
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\n  <component name=\"GradleSettings\">\n    <option name=\"linkedExternalProjectsSettings\">\n      <GradleProjectSettings>\n        <option name=\"testRunner\" value=\"PLATFORM\" />\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\n        <option name=\"modules\">\n          <set>\n            <option value=\"$PROJECT_DIR$\" />\n            <option value=\"$PROJECT_DIR$/app\" />\n          </set>\n        </option>\n        <option name=\"resolveModulePerSourceSet\" value=\"false\" />\n      </GradleProjectSettings>\n    </option>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+--- a/.idea/gradle.xml	(revision 46d6d449546a8c3e31c04a413cb4425d8aaf44ce)
++++ b/.idea/gradle.xml	(date 1629776766605)
+@@ -4,7 +4,7 @@
+   <component name="GradleSettings">
+     <option name="linkedExternalProjectsSettings">
+       <GradleProjectSettings>
+-        <option name="testRunner" value="PLATFORM" />
++        <option name="testRunner" value="GRADLE" />
+         <option name="distributionType" value="DEFAULT_WRAPPED" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+         <option name="modules">
