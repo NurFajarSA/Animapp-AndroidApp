@@ -13,6 +13,7 @@
         tools:context=".AboutActivity">
 
         <ImageView
+            android:background="@color/black"
             android:id="@+id/imageView"
             android:adjustViewBounds="true"
             android:layout_width="0dp"
